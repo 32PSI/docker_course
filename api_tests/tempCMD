@@ -1,0 +1,5 @@
+docker stop mariaDB
+docker rm mariaDB
+docker run -p3306:3306 --detach --name mariaDB --env MARIADB_ROOT_PASSWORD=password  mariadb:latest
+docker run -it --rm mariadb mysql -h127.0.0.1 -uroot -p
+docker run -it --rm --name cucumber cucumber_ubuntu
