@@ -15,3 +15,5 @@ COPY smoke_tests.sh ./
 
 RUN bundle install
 RUN mkdir test-output
+
+ENTRYPOINT ["sh", "smoke_tests.sh"]
