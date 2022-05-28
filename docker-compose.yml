@@ -19,7 +19,6 @@ services:
   cucumber_ruby:
     build: api_tests
     container_name: cucumber_ruby
-    network_mode: host
     volumes:
       - $PWD/api_tests/test-output:/usr/src/api-tests/test-output
     depends_on:
